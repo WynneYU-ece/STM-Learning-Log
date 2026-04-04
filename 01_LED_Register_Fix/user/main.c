@@ -1,10 +1,10 @@
 #include "stm32f10x.h"
 
 void GPIO_Register_Config(void) {
-    // 1. 开启时钟：RCC_APB2ENR 的位 2 是 IOPAEN
+    // 1. ENABLE CLOCK：RCC_APB2ENR 的位 2 是 IOPAEN
     RCC->APB2ENR |= (1 << 2);
 
-    // 2. 配置 PA0：CRL 寄存器的低 4 位 (Bit 3:0)
+    // 2. Configuer PA0：CRL 寄存器的低 4 位 (Bit 3:0)
     // 第一步：清零 (Masking) —— 用 &= ~ 将对应位设为 0
     // 0xF 即二进制 1111，左移 0 位。目的是确保这 4 位初始为 0
     GPIOA->CRL &= ~(0xF << 0);
