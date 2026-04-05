@@ -20,11 +20,11 @@ RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE); //ENABLR CLOCK
 
 }
 
-void LED_ON(void)
+void LED_On(void)
 {
     GPIO_ResetBits(LED_PORT, LED_PIN);
 }
-void LED_OFF(void);
+void LED_Off(void);
 {
     GPIO_SetBits(LED_PORT, LED_PIN);
 }
