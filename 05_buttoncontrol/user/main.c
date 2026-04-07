@@ -19,13 +19,7 @@ int main(void)
 		if(KeyNum == 1)
 		{
 		
-		LED_On(GPIOA, GPIO_Pin_0);
-		
-		}
-		if(KeyNum == 2)
-		{
-		
-		LED_Off(GPIOA, GPIO_Pin_0);
+		LED_Turn(GPIOA, GPIO_Pin_0);
 		
 		}
 	}
