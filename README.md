@@ -13,6 +13,8 @@ This repository documents my journey in STM32 embedded development, from basic L
 ### 2. 8-Bit LED Chaser (Water Light)
 - **Functionality**: Synchronized sequential LED blinking across pins PA0-PA7 using array iteration and loops.
 - **Troubleshooting**: Optimized the control logic by implementing a "Turn On -> Delay -> Turn Off" sequence to prevent simultaneous lighting of all LEDs.
+### 3. Mastered GPIO Input/Output:
+Gained a deep understanding of reading digital signals from external hardware.
 
 ## 📂 Directory Structure
 - **User/**: Application logic and high-level control (`main.c`, `led.c`).
