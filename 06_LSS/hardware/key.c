@@ -16,6 +16,7 @@ void KEY_Init(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
     GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
 
+// Detect if the button is pressed
 uint8_t Key_GetNum(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
 	uint8_t KeyNum = 0;
