@@ -1,6 +1,10 @@
 #include "key.h"
 #include "Delay.h"
 
+/**
+ * @brief  Generalized GPIO Driver and implement GPIO input.
+ * @param  GPIOx: (GPIOA, GPIOB, GPIOC...)
+
 void KEY_Init(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {		
 		// ENABLE CLOCK
