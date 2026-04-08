@@ -11,7 +11,7 @@ int main(void)
 	
 	while(1)
 	{
-		//LED_On(GPIOA, GPIO_Pin_0); 
+		LED_On(GPIOA, GPIO_Pin_0); 
 		
 		if (Lss_Get(GPIOB, GPIO_Pin_13) == 1)
 			BUZZER_On(GPIOB, GPIO_Pin_12);
