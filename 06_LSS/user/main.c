@@ -17,9 +17,6 @@ int main(void)
 			BUZZER_On(GPIOB, GPIO_Pin_12);
 		else
 			BUZZER_Off(GPIOB, GPIO_Pin_12);
-		
-			
-	
 	}
 
 }
