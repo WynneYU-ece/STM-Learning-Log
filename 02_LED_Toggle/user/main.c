@@ -13,10 +13,10 @@ int main(void)
 	
 	while(1)
 	{
-	//GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_RESET);
-		//Delay_ms(500);
+	GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_RESET);
+		Delay_ms(500);
 	GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_SET);
-		//Delay_ms(500);
+	    /Delay_ms(500);
 	}
 
 }
